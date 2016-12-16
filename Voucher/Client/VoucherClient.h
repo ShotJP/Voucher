@@ -29,7 +29,7 @@ typedef void (^VoucherClientCompletionHandler)( NSData * _Nullable authData, NSS
 @property (readonly, copy, nonatomic, nonnull) NSString *uniqueSharedId;
 @property (readonly, assign, nonatomic) BOOL isSearching;
 
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 - (nonnull instancetype)initWithUniqueSharedId:(nonnull NSString *)uniqueSharedId displayName:(nullable NSString *)displayName NS_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithUniqueSharedId:(nonnull NSString *)uniqueSharedId;
 
